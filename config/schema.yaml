@@ -1,0 +1,14 @@
+business_rules:
+  priority_imputation_matrix:
+    "1 - High_1 - High": 1
+    "1 - High_2 - Medium": 2
+    "1 - High_3 - Low": 3
+    "2 - Medium_1 - High": 2
+    "2 - Medium_2 - Medium": 3
+    "2 - Medium_3 - Low": 4
+    "3 - Low_1 - High": 3
+    "3 - Low_2 - Medium": 4
+    "3 - Low_3 - Low": 5
+  time_settings:
+    expected_format: "%d/%m/%Y %H:%M"
+  rare_labels_threshold: 0.05

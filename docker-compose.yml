@@ -1,0 +1,12 @@
+version: '3.8'
+
+services:
+  ml-env:
+    build: .
+    container_name: ml_predict_env
+    volumes:
+      - .:/app
+    ports:
+      - "8888:8888"
+    environment:
+      - JUPYTER_ENABLE_LAB=yes

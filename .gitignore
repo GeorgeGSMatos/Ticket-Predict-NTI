@@ -1,0 +1,28 @@
+# Ignorar dados sensíveis e muito pesados (Dataset ServiceNow Raw/Processed)
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+.agents/rules/*
+
+# Ambientes Virtuais e Dependências
+venv/
+.venv/
+env/
+__pycache__/
+*.pyc
+
+# Arquivos de Sistema e IDE
+.DS_Store
+.vscode/
+.idea/
+.ipynb_checkpoints/
+
+# Variáveis de ambiente
+.env
+
+# Ignorar o data/raw/get_info.py se ainda existir algum resquício
+get_info.py
+
+# Ignorar lixos do sistema do windows
+Thumbs.db
