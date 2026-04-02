@@ -36,9 +36,15 @@ A estrutura analítica consumiu dados tabulares contínuos ITSM brutos do Servic
 1. **Ingestão:** Leitura e tipagem O(N) de grandes volumes brutos preservando logs passados impuros de memória.
 2. **Data Cleansing Vetorial:** Criação do ambiente limpo *Rare Label Dynamic Encoding*, com suporte de Configuração Imputativa Baseada na Matriz Padrão de Prioridade (Impact vs Urgency ITIL). 
 3. **Deep EDA (Time Physics e Time Series Exploration):** A consolidação estatística matemática para mapear Tendências Ocultas sob O Gaping Sazonal dos Relatórios.
+
+  ![Geometria da Demanda NTI](./assets/heatmap_sazonalidade.png)
+
 4. **Estabelecimento de Benchmark (Régua de Falha Mínima):** Implementação e construção agressiva de Modelos *Naive Lineares de Smoothness* (Média Móvel de Múltiplos percursos), blindando contra "Holiday Outages/Falhas Null Diárias" através do acréscimo dinâmico geométrico do preenchimento histórico limitador `.shift(1)`.
 
 ## Principais Insights
+
+![Importância das Features no Modelo](./assets/feature_importance.png)
+
 *   **O Risco Exponencial Subjacente do Help Desk:** A volatilidade agressiva atestada durante as plotagens e CV cruzado no Baseline provam que "modelos lineares e estatísticas rasas" sempre colapsam a precisão do forecast por sofrerem de retardo de percepção retroativo no NTI. O desvio padrão gigantesco (> 130 vs avg 60) clama pela utilização de lógicas algorítimcas de múltiplas profundidades. 
 *   **Transição de Responsabilidades Preditivas:** Entender que ferramentas analíticas falham nas interrupções exige uma rotação iminente do nosso sistema arquiteturally pronto para acolher modelos Cíclicos baseado em Árvores Inteligentes Parametrizáveis - Capazes de domar falhas sazonais prevendo comportamentos sistêmicos subjacentes através de Lags cruzados na estrutura dimensional, no qual o `XGBoost` dominará o ambiente sem prejudicar os limites preestabelecidos do sistema atual.
 
