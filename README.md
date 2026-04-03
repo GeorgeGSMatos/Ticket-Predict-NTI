@@ -1,6 +1,6 @@
-# Título do Projeto: Ticket Predict – O NTI Proativo
+# Ticket Predict
 
-## Imagem da Capa
+## Capa
 ![Capa](./assets/capa.png)
 
 ## Problema de Negócio
